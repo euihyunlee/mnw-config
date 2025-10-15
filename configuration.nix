@@ -16,6 +16,9 @@
         fd
         ripgrep
 
+        # C/C++
+        clang-tools
+
         # Lua
         lua-language-server
         stylua
