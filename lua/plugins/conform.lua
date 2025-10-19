@@ -25,6 +25,7 @@ return {
                 javascript = { "prettier" },
                 typescript = { "prettier" },
                 svelte = { "prettier" },
+                typst = { "typstyle" },
             },
         })
     end,
