@@ -4,7 +4,13 @@ local servers = {
     clangd = {},
     rust_analyzer = {},
     expert = {},
-    ty = {},
+    ty = {
+        settings = {
+            experimental = {
+                rename = true,
+            },
+        },
+    },
     ruff = {},
     ts_ls = {},
     svelte = {},
