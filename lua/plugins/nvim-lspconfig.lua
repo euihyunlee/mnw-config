@@ -41,9 +41,22 @@ return {
                     vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = desc })
                 end
 
-                local client = vim.lsp.get_client_by_id(event.data.client_id)
+                map("grd", function()
+                    vim.lsp.buf.definition()
+                end, "vim.lsp.buf.definition()")
 
-                if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
+                local client = vim.lsp.get_client_by_id(event.data.client_id)
+                if not client then
+                    return
+                end
+
+                if client:supports_method("textDocument/declaration") then
+                    dap("grD", function()
+                        vim.lsp.buf.declaration()
+                    end, "vim.lsp.buf.declaration()")
+                end
+
+                if client:supports_method("textDocument/inlay_hint") then
                     map("grh", function()
                         vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
                     end, "vim.lsp.inlay_hint.toggle()")
