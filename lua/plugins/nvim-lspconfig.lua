@@ -51,7 +51,7 @@ return {
                 end
 
                 if client:supports_method("textDocument/declaration") then
-                    dap("grD", function()
+                    map("grD", function()
                         vim.lsp.buf.declaration()
                     end, "vim.lsp.buf.declaration()")
                 end
