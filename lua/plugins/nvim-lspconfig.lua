@@ -6,8 +6,10 @@ local servers = {
     expert = {},
     ty = {
         settings = {
-            experimental = {
-                rename = true,
+            ty = {
+                experimental = {
+                    rename = true,
+                },
             },
         },
     },
