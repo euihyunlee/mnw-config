@@ -17,6 +17,7 @@ local servers = {
     ts_ls = {},
     svelte = {},
     eslint = {},
+    texlab = {},
 }
 
 return {

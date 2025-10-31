@@ -19,6 +19,9 @@
         # C/C++
         clang-tools
 
+        # LaTeX
+        texlab
+
         # Lua
         lua-language-server
         stylua
