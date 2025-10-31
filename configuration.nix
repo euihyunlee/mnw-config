@@ -71,7 +71,6 @@
             plenary-nvim
             telescope-fzf-native-nvim
             telescope-nvim
-            vimtex
             which-key-nvim
         ];
     };
