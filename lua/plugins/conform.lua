@@ -26,6 +26,7 @@ return {
                 typescript = { "prettier" },
                 svelte = { "prettier" },
                 typst = { "typstyle" },
+                tex = { "tex-fmt" },
             },
         })
     end,

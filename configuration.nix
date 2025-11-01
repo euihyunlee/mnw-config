@@ -21,6 +21,7 @@
 
         # LaTeX
         texlab
+        tex-fmt
 
         # Lua
         lua-language-server
