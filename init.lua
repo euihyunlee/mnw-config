@@ -31,7 +31,7 @@ if mnw == nil then
         "neovim/nvim-lspconfig",
 
         -- Optional (i.e., lazy-loaded) plugins
-        { "saghen/blink.cmp", opt = true },
+        { "saghen/blink.cmp", build = "cargo build --release", opt = true },
         { "catppuccin/nvim", as = "catppuccin-nvim", opt = true },
         { "stevearc/conform.nvim", opt = true },
         { "rafamadriz/friendly-snippets", opt = true },
