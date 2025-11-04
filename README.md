@@ -32,8 +32,8 @@ Based on [flake-parts](https://github.com/hercules-ci/flake-parts) and Gerg-L's 
 
 ## TODO
 
+- [x] Add optional plugins to Paq bootstrapping code
 - [ ] Add plugins descriptions to README
-- [ ] Add optional plugins to Paq bootstrapping code
 - [ ] Install C/C++, Rust, and Elixir language servers/formatters/linters via Nix
 
 ### Plugins

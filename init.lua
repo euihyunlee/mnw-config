@@ -27,8 +27,23 @@ if mnw == nil then
         "savq/paq-nvim",
         "nvim-neorocks/lz.n",
 
-        -- TODO: Add opt plugins; e.g.,
-        -- { "catppuccin/nvim", as = "catppuccin-nvim" },
+        -- Opt plugins
+        "saghen/blink.cmp",
+        { "catppuccin/nvim", as = "catppuccin-nvim" },
+        "stevearc/conform.nvim",
+        "rafamadriz/friendly-snippets",
+        "lewis6991/gitsigns.nvim",
+        "folke/lazydev.nvim",
+        "nvim-lualine/lualine.nvim",
+        "mfussenegger/nvim-lint",
+        "neovim/nvim-lspconfig",
+        "nvim-treesitter/nvim-treesitter",
+        "nvim-tree/nvim-web-devicons",
+        "stevearc/oil.nvim",
+        "nvim-lua/plenary.nvim",
+        "nvim-telescope/telescope-fzf-native.nvim",
+        "nvim-telescope/telescope.nvim",
+        "folke/which-key.nvim",
     })
 end
 
