@@ -42,7 +42,7 @@ if mnw == nil then
         { "nvim-tree/nvim-web-devicons", opt = true },
         { "stevearc/oil.nvim", opt = true },
         { "nvim-lua/plenary.nvim", opt = true },
-        { "nvim-telescope/telescope-fzf-native.nvim", opt = true },
+        { "nvim-telescope/telescope-fzf-native.nvim", build = "make", opt = true },
         { "nvim-telescope/telescope.nvim", opt = true },
         { "folke/which-key.nvim", opt = true },
     })
