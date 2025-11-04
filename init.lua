@@ -27,23 +27,24 @@ if mnw == nil then
         "savq/paq-nvim",
         "nvim-neorocks/lz.n",
 
-        -- Opt plugins
-        "saghen/blink.cmp",
-        { "catppuccin/nvim", as = "catppuccin-nvim" },
-        "stevearc/conform.nvim",
-        "rafamadriz/friendly-snippets",
-        "lewis6991/gitsigns.nvim",
-        "folke/lazydev.nvim",
-        "nvim-lualine/lualine.nvim",
-        "mfussenegger/nvim-lint",
-        "neovim/nvim-lspconfig",
         "nvim-treesitter/nvim-treesitter",
-        "nvim-tree/nvim-web-devicons",
-        "stevearc/oil.nvim",
-        "nvim-lua/plenary.nvim",
-        "nvim-telescope/telescope-fzf-native.nvim",
-        "nvim-telescope/telescope.nvim",
-        "folke/which-key.nvim",
+        "neovim/nvim-lspconfig",
+
+        -- Optional (i.e., lazy-loaded) plugins
+        { "saghen/blink.cmp", opt = true },
+        { "catppuccin/nvim", as = "catppuccin-nvim", opt = true },
+        { "stevearc/conform.nvim", opt = true },
+        { "rafamadriz/friendly-snippets", opt = true },
+        { "lewis6991/gitsigns.nvim", opt = true },
+        { "folke/lazydev.nvim", opt = true },
+        { "nvim-lualine/lualine.nvim", opt = true },
+        { "mfussenegger/nvim-lint", opt = true },
+        { "nvim-tree/nvim-web-devicons", opt = true },
+        { "stevearc/oil.nvim", opt = true },
+        { "nvim-lua/plenary.nvim", opt = true },
+        { "nvim-telescope/telescope-fzf-native.nvim", opt = true },
+        { "nvim-telescope/telescope.nvim", opt = true },
+        { "folke/which-key.nvim", opt = true },
     })
 end
 
