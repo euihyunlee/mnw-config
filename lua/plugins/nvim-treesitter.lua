@@ -4,7 +4,7 @@ return {
     -- nvim-treesitter does not support lazy-loading
     lazy = false,
     after = function()
-        require("nvim-treesitter.configs").setup({
+        require("nvim-treesitter").setup({
             -- Install parsers synchronously (only applied to `ensure_installed`)
             sync_install = false,
 
