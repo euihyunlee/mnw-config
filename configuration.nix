@@ -39,7 +39,14 @@
         eslint
         prettier
         svelte-language-server
-        typescript-language-server
+        # Temporary workaround for the 6.0.2 pnpm dependency hash on Apple Silicon.
+        (if stdenv.hostPlatform.system == "aarch64-darwin" && typescript-language-server.version == "6.0.2"
+         then typescript-language-server.overrideAttrs (old: {
+             pnpmDeps = old.pnpmDeps.overrideAttrs {
+                 outputHash = "sha256-PmyJb8090pEPc09Tbv8RgdvQpzpba2L8ve87+aVncQU=";
+             };
+         })
+         else typescript-language-server)
         vscode-langservers-extracted
     ];
 
